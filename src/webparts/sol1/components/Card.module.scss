@@ -1,0 +1,43 @@
+@import './FluentModule.scss';
+
+.Card {
+    display: grid;
+    align-items: left;
+    // width: 180px;
+    // margin-right: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    // flex-direction: column;
+    // justify-content: space-between;
+    grid-template-columns: 100px auto;
+    border-radius: 15px;
+    @include ms-depth-64;
+}
+.Card-Container1{
+    // margin-top:-60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // float:right;
+}
+.Card-Container2{
+    // margin-top:-60px;
+    display: grid;
+    align-items: start;
+    // justify-content: space-between;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 20px;
+
+    // float:right;
+}
+.Card-Container3 {
+    // display: grid;
+    // grid-template-columns: 100px 100px 100px;
+    // column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Card-Container3-p{
+    grid-column:  1/-2;
+  }
