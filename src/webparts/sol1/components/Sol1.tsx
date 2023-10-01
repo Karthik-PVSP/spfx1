@@ -74,6 +74,9 @@ export default class Sol1 extends React.Component<ISol1Props, ISol1State> {
         let sLinesnames = this.state.ServiceLine.filter((item)=>item.value).map((item)=>item.name);
         retunData = data.filter((item: T) => sLinesnames.includes(item.serviceLine) );
       }
+      else{
+        retunData=data;
+      }
       
       if (this.state.Level.some((item)=>item.value&&item.name!=="All")) {
         let levelsNames = this.state.Level.filter((item)=>item.value).map((item)=>item.name);
